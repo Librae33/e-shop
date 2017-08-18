@@ -1,0 +1,7 @@
+[
+{"img":"img/product/product_banner01.jpg","descirption":"图片1"},
+{"img":"img/product/product_banner02.jpg","descirption":"图片2"},
+{"img":"img/product/product_banner03.jpg","descirption":"图片3"},
+{"img":"img/product/product_banner04.jpg","descirption":"图片4"}
+
+]
