@@ -102,11 +102,44 @@
 
 		};
 	}
-
+   //回到顶部效果
+		 function backTop() {
+			var backToTop = document.getElementById("backToTop");
+			window.onscroll = showBtn;
+			function showBtn() {
+				var b_scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+				var winHeight = document.documentElement.clientHeight || document.body.clientHeight;
+				if(b_scrollTop > winHeight) {
+					backToTop.style.display = "block";
+				}
+			}
+			backToTop.onclick = function() {
+				window.onscroll = null;
+				backToTop.style.display = "none";
+				var interval = 10,
+					duration = 500,
+					target = document.documentElement.scrollHeight || document.body.scrollHeight;
+				var step = (target / duration) * interval;
+				var timer = setInterval(function() {
+					var b_curTop = document.documentElement.scrollTop || document.body.scrollTop;
+					if(b_curTop <= 0) {
+						window.onscroll = showBtn;
+						clearInterval(timer);
+						return;
+					}
+					b_curTop -= step;
+					document.documentElement.scrollTop =b_curTop;
+					document.body.scrollTop = b_curTop;
+				}, interval);
+				
+			};
+			
+		}
 	function init() {
 		changeTab(); //选项卡
 		changePic(); //图片切换
 		photoLoupe(); //图片放大镜
+		backTop();//回到顶部
 	}
 	init();
 
