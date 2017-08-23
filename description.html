@@ -92,28 +92,34 @@
 			<div class="description clearfix">
 				<div class="leftArea">
 					<div class="description_imgs">
-						<div class="bigImg">
+						<div class="bigImg" id="box">
+							<img id="bigImg" src="img/description/description_img01.jpg" />
+							<div id="mark" style="display: none"></div>
+						</div>
+						<div id="bigBox">
 							<img src="img/description/description_img01.jpg" />
 						</div>
-						<div class="smallImg">
-							<ul>
-								<li class="des_active">
-									<a href=""><img src="img/description/description_img01.jpg" /></a>
+						
+						<div class="smallImg ">
+							<ul id="smallImg">
+								<li class="des_active smallImg_select">
+									<img src="img/description/description_img01.jpg" /></a>
 								</li>
 								<li>
-									<a href=""><img src="img/description/description_img02.jpg" /></a>
+									<img src="img/description/description_img02.jpg" />
 								</li>
 								<li>
-									<a href=""><img src="img/description/description_img03.jpg" /></a>
+									<img src="img/description/description_img03.jpg" />
 								</li>
 								<li>
-									<a href=""><img src="img/description/description_img04.jpg" /></a>
+									<img src="img/description/description_img04.jpg" />
 								</li>
 								<li>
-									<a href=""><img src="img/description/description_img05.jpg" /></a>
+									<img src="img/description/description_img05.jpg" />
 								</li>
 							</ul>
 						</div>
+
 					</div>
 				</div>
 				<div class="rightArea">
@@ -181,17 +187,17 @@
 		<div class="hr_15"></div>
 		<div class="des_info comWidth clearfix">
 			<div class="leftArea">
-				<div class="recommend">
-					<div class="recommend_tit">
-						<ul>
-							<li>
-								<a href="">同价位</a>
-							</li>
-							<li>
-								<a href="">同品牌</a>
-							</li>
-						</ul>
-					</div>
+				<div class="recommend_tit">
+					<ul id="tabUl">
+						<li class="li_select">
+							同价位
+						</li>
+						<li>
+							同品牌
+						</li>
+					</ul>
+				</div>
+				<div class="recommend select">
 					<div class="shopItem">
 						<div class="shopImg">
 							<a href="#"><img src="img/3FItem01.jpg"> </a>
@@ -220,6 +226,39 @@
 						</div>
 						<h3>荣耀爆款</h3>
 						<p>最高立省1000元</p>
+					</div>
+				</div>
+				<!--另一组-->
+				<div class="recommend ">
+					<div class="shopItem">
+						<div class="shopImg">
+							<a href="#"><img src="img/description/description06.jpg"> </a>
+						</div>
+
+						<h3>苹果/APPLE iPhone6splus</h3>
+						<p>最高立省500元</p>
+					</div>
+					<div class="shopItem">
+						<div class="shopImg">
+							<a href="#"><img src="img/description/description10.jpg"> </a>
+						</div>
+						<h3>苹果/APPLE iPhone SE</h3>
+						<p>低至2369.00</p>
+					</div>
+					<div class="shopItem">
+						<div class="shopImg">
+							<a href="#"><img src="img/description/description08.jpg"> </a>
+						</div>
+						<h3>iPhone 6 32G金色</h3>
+						<p>低至2299元</p>
+					</div>
+					<div class="shopItem">
+						<div class="shopImg">
+							<a href="#"><img src="img/description/description09.jpg"> </a>
+						</div>
+
+						<h3>iPhone 7个性手机 高端手机</h3>
+						<p>¥8888.00</p>
 					</div>
 				</div>
 			</div>
@@ -251,6 +290,8 @@
 			</div>
 		</div>
 		<!--script-->
+		<script type="text/javascript" src="js/utils.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 
 	</body>
 

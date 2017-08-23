@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<style>
+			.reg_container {
+				height: 1000px;
+				width: 100%;
+			}
+			
+			.reg_header_top {
+				height: 3px;
+				width: 100%;
+				background: #651C4D;
+			}
+			
+			.reg_header {
+				height: 100px;
+				width: 100%;
+				background: #F6F2F4;
+			}
+			
+			.reg_left {
+				margin: 50px;
+			}
+			
+			#reg_box {
+				width: 50%;
+			}
+			
+			#table1 input {
+				height: 30px;
+				width: 300px;
+				border: 0.2px solid #CCCCCCC;
+				border-radius: 5px;
+			}
+			#table1 td {
+				margin-left: 20px;
+			}
+			
+			#reg_box .title {
+				text-align: left;
+				font-size: 16px;
+				color: #666;
+			}
+			
+			#reg_box .tip {
+				font-size: 14px;
+				visibility: hidden;
+			}
+			
+			#reg_box #submit {
+				display: inline-block;
+				height: 40px;
+				width: 300px;
+				border-radius: 5px;
+				background: #651C4D;
+				margin: 20px 60px;
+				color: #FFFFFF;
+				cursor: pointer;
+			}
+			
+			.reg_header h3 {
+				font-size: 20px;
+				font-weight: bold;
+				line-height: 30px;
+				height: 30px;
+				border-left: 1px solid #e5e0e2;
+				padding-left: 40px;
+				color: #651c4d;
+				margin-top: 30px;
+				margin-left: 100px;
+				float: left;
+			}
+			
+			.otherlink {
+				line-height: 30px;
+				height: 30px;
+				font-weight: bold;
+				padding-right: 25px;
+				
+				margin-top: 30px;
+				float: right;
+			}
+			.otherlink a{
+				font-size: 12px;
+				color: #7f1f59;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="reg_container">
+			<div class="reg_header">
+				<div class="reg_header_top"></div>
+				<h3>欢迎注册</h3>
+				<span class="otherlink">
+					<a href="#">了解更多</a><i>|</i>
+					<a href="#">反馈意见</a>
+					<i>|</i><a href="#/EN?RedirectUrl=https%3A%2F%2Fen.huazhu.com">English</a>
+				</span>
+			</div>
+			<div class="reg_main">
+				<div class="reg_left">
+					<div id="reg_box">
+						<form method="post">
+							<table cellspacing="10" id="table1">
+								<tr>
+									<td class="title">名称</td>
+									<td>
+										<input name="username" id="username" />
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td class="tip" id="tip_username">名称不能为空</td>
+								</tr>
+								<tr>
+									<td class="title">密码</td>
+									<td>
+										<input name="password" id="password" type="password">
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td class="tip" id="tip_password">密码不能为空</td>
+								</tr>
+								<tr>
+									<td class="title">密码确认</td>
+									<td>
+										<input name="password" id="confirm_password" type="password" />
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td class="tip" id="tip_Confirmpassword">密码不能为空</td>
+								</tr>
+								<tr>
+									<td class="title">邮箱</td>
+									<td>
+										<input name="email" id="email" />
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td class="tip" id="tip_email">邮箱不能为空</td>
+								</tr>
+								<tr>
+									<td class="title">手机</td>
+									<td>
+										<input name="phone" id="phone" />
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td class="tip" id="tip_phone">手机号码不能为空</td>
+								</tr>
+							</table>
+							<input type="submit" id="submit" value="注册" />
+						</form>
+					</div>
+				</div>
+				<div class="reg_right"></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/register.js"></script>
+	</body>
+
+</html>

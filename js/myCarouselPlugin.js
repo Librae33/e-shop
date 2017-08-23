@@ -101,7 +101,6 @@
 
 		//自动轮播
 		autoPlay: function() {
-			console.log(this.data.length);
 			if(this.index == (this.data.length - 1)) {
 				this.index = -1;
 			}
